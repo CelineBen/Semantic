@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="semantic/packaged/css/semantic.min.css"  media="screen" title="Principal" />
+        <link rel="stylesheet" type="text/css" href="index.css"  media="screen" title="Principal" />                             
+   		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>   
+     
+		<div id="header" class="ui teal fixed transparent inverted main menu">
+			<div class="left aligned item">
+				<div class="title">Logo</div>
+			</div>
+			<div class="right aligned item"> 
+				<div id="button-signin" class="ui submit mini black button">Sign In</div>					
+			</div>	
+		</div>		  		
+		
+		<main class="ui grid">
+			<div class="one wide column">
+			</div>
+			<div class="eight wide column">
+  				<h2>Name here.</h2>
+  				<p>Some description</p>
+  				<p>Some description</p>
+  				<p>Some description</p>
+			</div>
+			
+			<div class="six wide column">
+				<h3 class="ui center aligned header">Sign up</h3>
+				<div class="center aligned"> 
+					<div class="ui full facebook labeled icon button">
+     				<i class="facebook icon"></i>
+      					Sign up with Facebook
+    				</div>
+				</div>
+				<div class="ui horizontal divider">
+  					Or
+				</div>
+				<div id="sign-up" class="ui form">
+					<div class="two fields">
+						<div class="field">
+							<div class="ui labeled input">
+								<input placeholder="First Name" name="first-name" type="text">					
+								<div class="ui corner label">
+									<i class="icon asterisk"></i>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui left labeled input">
+								<input placeholder="Last Name" name="last-name" type="text">					
+								<div class="ui corner label">
+									<i class="icon asterisk"></i>
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div class="field">
+						<div class="ui left labeled input">
+							<input placeholder="Email" name="email" type="text">	
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui left labeled input">
+							<input placeholder="Re-enter Email" name="re-email" type="text">	
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div>
+			
+					<div class="field">
+						<div class="ui left labeled icon input">
+							<input placeholder="Password" name="password" type="password">
+							<i class="lock icon"></i>
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div>
+			
+					<div class="three fields">					
+						<div class="field">
+							<div class="ui selection dropdown">
+								<input type="hidden" name="month">
+								<div class="text">Month</div>
+								<i class="dropdown icon" ></i>
+								<div class="menu ui transition hidden">
+									<div class="item" data-value="1">January</div>
+									<div class="item" data-value="2">February</div>
+									<div class="item" data-value="3">March</div>
+									<div class="item" data-value="4">April</div>
+									<div class="item" data-value="5">May</div>
+									<div class="item" data-value="6">June</div>
+									<div class="item" data-value="7">July</div>
+									<div class="item" data-value="8">August</div>
+									<div class="item" data-value="9">September</div>
+									<div class="item" data-value="10">October</div>
+									<div class="item" data-value="11">November</div>
+									<div class="item" data-value="12">December</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">				
+							<div class="ui selection dropdown">
+								<input type="hidden" name="day">
+								<div class="text">Day</div>
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item" data-value="1">1</div>
+									<div class="item" data-value="2">2</div>
+									<div class="item" data-value="3">3</div>
+									<div class="item" data-value="4">4</div>
+									<div class="item" data-value="5">5</div>
+									<div class="item" data-value="6">6</div>
+									<div class="item" data-value="7">7</div>
+									<div class="item" data-value="8">8</div>
+									<div class="item" data-value="9">9</div>
+									<div class="item" data-value="10">10</div>
+									<div class="item" data-value="11">11</div>
+									<div class="item" data-value="12">12</div>
+									<div class="item" data-value="13">13</div>
+									<div class="item" data-value="14">14</div>
+									<div class="item" data-value="15">15</div>
+									<div class="item" data-value="16">16</div>
+									<div class="item" data-value="17">17</div>
+									<div class="item" data-value="18">18</div>
+									<div class="item" data-value="19">19</div>
+									<div class="item" data-value="20">20</div>
+									<div class="item" data-value="21">21</div>
+									<div class="item" data-value="22">22</div>
+									<div class="item" data-value="23">23</div>
+									<div class="item" data-value="24">24</div>
+									<div class="item" data-value="25">25</div>
+									<div class="item" data-value="26">26</div>
+									<div class="item" data-value="27">27</div>
+									<div class="item" data-value="28">28</div>
+									<div class="item" data-value="29">29</div>
+									<div class="item" data-value="30">30</div>
+									<div class="item" data-value="31">31</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">				
+							<div class="ui selection dropdown">
+								<input type="hidden" name="year">
+								<div class="text">Year</div>
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item" data-value="1960">1960</div>
+									<div class="item" data-value="1961">1961</div>
+									<div class="item" data-value="1962">1962</div>
+									<div class="item" data-value="1963">1963</div>
+									<div class="item" data-value="1964">1964</div>
+									<div class="item" data-value="1965">1965</div>
+									<div class="item" data-value="1966">1966</div>
+									<div class="item" data-value="1967">1967</div>
+									<div class="item" data-value="1968">1968</div>
+									<div class="item" data-value="1969">1969</div>
+									<div class="item" data-value="1970">1970</div>
+									<div class="item" data-value="1971">1971</div>
+									<div class="item" data-value="1972">1972</div>
+									<div class="item" data-value="1973">1973</div>
+									<div class="item" data-value="1974">1974</div>
+									<div class="item" data-value="1975">1975</div>
+									<div class="item" data-value="1976">1976</div>
+									<div class="item" data-value="1977">1977</div>
+									<div class="item" data-value="1978">1978</div>
+									<div class="item" data-value="1979">1979</div>
+									<div class="item" data-value="1980">1980</div>
+									<div class="item" data-value="1981">1981</div>
+									<div class="item" data-value="1982">1982</div>
+									<div class="item" data-value="1983">1983</div>
+									<div class="item" data-value="1984">1984</div>
+									<div class="item" data-value="1985">1985</div>
+									<div class="item" data-value="1986">1986</div>
+									<div class="item" data-value="1987">1987</div>
+									<div class="item" data-value="1988">1988</div>
+									<div class="item" data-value="1989">1989</div>
+									<div class="item" data-value="1990">1990</div>
+									<div class="item" data-value="1991">1991</div>
+									<div class="item" data-value="1992">1992</div>
+									<div class="item" data-value="1993">1993</div>
+									<div class="item" data-value="1994">1994</div>
+									<div class="item" data-value="1995">1995</div>
+									<div class="item" data-value="1996">1996</div>
+									<div class="item" data-value="1997">1997</div>
+									<div class="item" data-value="1998">1998</div>
+									<div class="item" data-value="1999">1999</div>
+									<div class="item" data-value="2000">2000</div>
+									<div class="item" data-value="2001">2001</div>
+									<div class="item" data-value="2002">2002</div>
+									<div class="item" data-value="2003">2003</div>
+									<div class="item" data-value="2004">2004</div>
+									<div class="item" data-value="2005">2005</div>
+									<div class="item" data-value="2006">2006</div>
+									<div class="item" data-value="2007">2007</div>
+									<div class="item" data-value="2008">2008</div>
+									<div class="item" data-value="2009">2009</div>
+									<div class="item" data-value="2010">2010</div>
+									<div class="item" data-value="2011">2011</div>
+									<div class="item" data-value="2012">2012</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="ui form">
+					  <div class="inline fields">
+						<div class="field">
+							<div class="ui radio checkbox">
+							<input id="female" type="radio" name="sex" checked="checked">
+							<label for="female">Female</label>
+						  </div>
+						</div>
+						<div class="field">
+						  <div class="ui radio checkbox">
+							<input id="male" type="radio" name="sex">
+							<label for="male">Male</label>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			
+					<div class="field">
+						<div class="ui checkbox">
+							<input id="terms" type="checkbox">
+							<label for="terms">I agree to the Terms and Conditions</label>
+						</div>
+					</div>
+					<div class="ui teal submit button">Sign up</div>					
+				</div>
+			</div>
+		</main>
+		
+		<div id="footer">
+			<div class="ui fixed inverted menu grid"> 
+				<div class="seven wide column">
+					<div class="mini ui facebook icon button ">
+						<i class="facebook icon"></i>
+					</div>
+					<div class="mini ui twitter icon button ">
+						<i class="twitter icon"></i>
+					</div>
+					<div class="mini ui linkedin icon button ">
+						<i class="linkedin icon"></i>
+					</div>
+				</div>
+				<div class="nine wide column">
+					<a class="item" onclick="location.href='about.php'">About us</a>
+					<a class="item" onclick="location.href='privacy.php'">Privacy policy</a>
+					<a class="item" onclick="location.href='terms.php'">Terms & conditions</a>
+					<a class="item" onclick="location.href='contact.php'">Contact</a>
+					<a class="item" onclick="location.href='help.php'">Help</a>
+					<span class="item"> 2014 Harberry</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="sign-in-modal" class="ui modal mini">
+			<i class="close icon"></i>
+			<div class="header">
+				Sign In
+			</div>
+			
+			<div class="content">				
+				<div class="ui center aligned facebook labeled icon button full">
+					<i class="facebook icon"></i>
+						Sign In with Facebook
+				</div>
+				
+				<div class="ui horizontal divider">
+					Or
+				</div>
+				
+				<div class="ui fluid form segment">					
+					<div class="field">
+						<div class="ui labeled input">
+							<input placeholder="Email" name="email" type="text">	
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div> 
+					<div class="field">
+						<div class="ui left labeled icon input">
+							<input placeholder="Password" name="password" type="password">
+							<i class="lock icon"></i>
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div>					
+					<div class="two fields">
+						<div class="field"> 
+							<div class="ui checkbox">
+								<input id="remember-me" type="checkbox" name="remember-me">
+								<label for="remember-me" class="">Remember Me</label>
+							</div>
+						</div>
+						<div class="field">
+							<a class="item mini right" onclick="showResetPasswordModal()">Forgot your password?</a>
+						</div>
+					</div>							
+						<div class="ui small buttons">
+ 							<div id="cancel-sign-in" class="ui button">Cancel</div>
+  							<div class="or"></div>
+  							<div class="ui teal submit button">Sign In</div>
+						</div>
+				</div>		
+			</div>
+		</div>
+		
+		<div id="reset-password-modal" class="ui modal tiny">
+			<i class="close icon"></i>
+			<div class="header">
+				Reset password
+			</div>			
+			<div class="content">
+				<div class="ui fluid form segment">					
+					<div class="field">
+						<label> Enter your email and we'll send you instructions.</label>
+						<div class="ui labeled input">
+							<input placeholder="Email" name="email" type="text">	
+							<div class="ui corner label">
+								<i class="icon asterisk"></i>
+							</div>
+						</div>
+					</div> 
+					<div class="ui small buttons">
+ 						<div id="cancel-reset-password" class="ui button">Return to Sign In</div>
+  						<div class="or"></div>
+  						<div class="ui teal submit button">Submit</div>
+					</div>
+				</div>			
+			</div>	
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="semantic/packaged/javascript/semantic.min.js"></script> 
+		<script src="index.js"></script> 
+    </body>
+</html>
