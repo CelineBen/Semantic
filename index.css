@@ -1,16 +1,32 @@
 * body {
 font-family: 'Gafata',Helvetica,Arial,sans-serif !important;
 font-weight: 200;
-background-color: #FFE5CC;
 }
-.ui.menu.teal{
-/*position: absolute;
-top: 0;
-left: 0;*/
--moz-box-shadow:    0px 0px 5px 10px #ccc;
--webkit-box-shadow: 0px 0px 5px 10px #ccc;
+.primary.row{
+position: inline-block;
+width: 80%;
+margin: 0 auto;
+max-width: 100%;
+min-width: 768px;
+}
+.row.header, .row.footer{
+width: 90%;
+}
+.ui.header.teal{
+box-shadow: 0 0 0 1px rgba(0,181,173,.3);
+/*border: 1px solid #00B5AD;*/
+}
+.ui.header.black{
+box-shadow: 0 0 0 1px rgba(92,97,102,.3);
+/*border: 1px solid #5C6166;*/
+}
+/*.ui.customized.header.teal.shadow{
+width: 100%;
+background-color: #00B5AD;
+-moz-box-shadow:    0px 0px 5px 10px #00B5AD;
+-webkit-box-shadow: 0px 0px 5px 10px #00B5AD;
 box-shadow: 0px 0px 10px 5px #00B5AD;
-}
+}*/
 .ui.modal.mini{
 width: 32%;
 left: 33%;
@@ -28,15 +44,8 @@ width:100%;
 color: #FFFFFF;
 }
 .menu.item{
-/*font-weight: 200;*/
 font-size: 0.8em;
 }
 #signup{
 background-color: #FFE5CC;
-}
-#footer{
-/*height: 30px;
-position: absolute;
-bottom: 0;
-left: 0;*/
 }

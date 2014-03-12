@@ -18,7 +18,7 @@ $(document).ready(function(){
 	
 	$('.ui.dropdown').dropdown();
 	
-	$('.ui.form').form({
+	var validationRules = {
 		firstName: {
 		  identifier  : 'first-name',
 		  rules: [
@@ -84,8 +84,8 @@ $(document).ready(function(){
 		  identifier : 'month',
 		  rules: [
 			{
-			  type   : 'checked',
-			  prompt : 'Please enter a month'
+			  type   : 'empty',
+			  prompt : 'Enter a month'
 			}
 		  ]
 		},
@@ -93,8 +93,8 @@ $(document).ready(function(){
 		  identifier : 'day',
 		  rules: [
 			{
-			  type   : 'is[Day]',
-			  prompt : 'Please enter a day'
+			  type   : 'empty',
+			  prompt : 'Enter a day'
 			}
 		  ]
 		},
@@ -102,8 +102,8 @@ $(document).ready(function(){
 		  identifier : 'year',
 		  rules: [
 			{
-			  type   : 'is[Year]',
-			  prompt : 'Please enter a year'
+			  type   : 'empty',
+			  prompt : 'Enter a year'
 			}
 		  ]
 		},
@@ -116,7 +116,10 @@ $(document).ready(function(){
 			}
 		  ]
 		}
-	}, {
+	};
+	
+	
+	$('.ui.form').form(validationRules, {
 		inline : true,
     	on     : 'blur',
     	transition: 'fade down'
