@@ -16,6 +16,7 @@ $(document).ready(function(){
 		signInModal.modal('hide');
 	});	
 	
+	$('.ui.accordion').accordion();
 	$('.ui.dropdown').dropdown();
 	
 	var validationRules = {
