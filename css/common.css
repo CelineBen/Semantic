@@ -1,0 +1,48 @@
+* body {
+/*font-family: 'Gafata',Helvetica,Arial,sans-serif !important;*/
+font-family: 'Quicksand',Helvetica,Arial,sans-serif !important;
+font-weight: 200;
+}
+#footer-links{
+position: relative;
+bottom: -10px;
+}
+#header{
+padding: 10px 0 30px 0;
+}
+#content{
+min-height: 400px;
+padding: 20px 0 20px 20px;
+}
+#footer{
+padding: 60px 0 0 0;
+}
+.primary.row{
+position: block;
+width: 80%;
+margin: 0 auto;
+min-height: 40px;
+max-width: 100%;
+min-width: 768px;
+}
+.full{
+width:100%;
+}
+.white{
+color: #FFFFFF;
+}
+.ui.modal.mini{
+width: 27%;
+left: 35%;
+margin: 0 auto;
+}
+.ui.modal.tiny{
+width: 32%;
+left: 33%;
+margin: 0 auto;
+}
+.ui.modal.small{
+width: 40%;
+left: 30%;
+margin: 0 auto;
+}

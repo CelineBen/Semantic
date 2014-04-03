@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="semantic/packaged/css/semantic.min.css"  media="screen" title="Principal" />
+        <link rel="stylesheet" type="text/css" href="css/common.css"  media="screen" title="Principal" />  
+        <link rel="stylesheet" type="text/css" href="css/home.css"  media="screen" title="Principal" />                            
+   		<link href="http://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
+   		<!--<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>-->
+    </head>
+    
+    <body>  
+    	<div id="header"> 	
+    		<div class="primary row ">
+				<div class="ui floated header">
+					<i class="red large user icon"></i>
+					Steve Jobs
+				</div>
+				<div class="ui fixed right floated header">
+					<div id="button-add-category" class="ui mini black button">
+						<i class="add icon"></i>
+						Category
+					</div>
+					<div id="button-add-bookmark" class="ui mini black button">
+						<i class="add icon"></i>
+						Bookmark
+					</div>
+					<div id="button-signin" class="ui mini black button">
+						Edit
+					</div>
+					<div class="ui black mini launch left attached button">
+						<i class="icon list layout"></i>
+					</div>
+				</div>
+  			</div>	
+		</div>
+		
+		<div class="ui right very thin sidebar menu" >		
+			<div class="item" title="Modify color">
+				<i class="purple large pencil icon"></i>
+			</div>
+			
+			<div class="item" title="Pin bookmark">
+				<i class="purple large pin icon"></i>
+			</div>
+			
+			<div class="item" title="Change background">
+				<i class="purple large photo icon"></i>
+			</div>
+			
+			<div class="item" title="Settings">
+				<i class="purple large setting icon"></i>
+			</div>
+			
+			<div class="item fixed bottom" title="Sign out">
+				<i class="purple large sign out icon"></i>
+			</div>
+		</div>
+
+		<div id = content>
+		<div class="primary row">
+			<main class="ui grid content">
+				<div class="nine wide column">
+					<h2>Some bookmarks here.</h2>
+				</div>
+			
+				<div class="seven wide column">
+				</div>
+			</main>
+		</div> <!-- primary row -->
+		</div> <!-- content -->
+
+		<div id="footer">
+			<div class="primary row footer">
+				<div class="ui left floated header"> 
+					<div class="ui mini facebook icon button ">
+						<i class="facebook icon"></i>
+					</div>
+					<!--<div class="mini ui twitter icon button ">
+						<i class="twitter icon"></i>
+					</div>
+					<div class="mini ui linkedin icon button ">
+						<i class="linkedin icon"></i>
+					</div>-->
+				</div>
+				<div id="footer-links"class="ui right floated header tiny">
+					<a class="item" onclick="location.href='about.php'">About us</a> . 
+					<a class="item" onclick="location.href='privacy.php'">Privacy policy</a> . 
+					<a class="item" onclick="location.href='terms.php'">Terms & conditions</a> . 
+					<a class="item" onclick="location.href='contact.php'">Contact</a> . 
+					<a class="item" onclick="location.href='help.php'">Help</a> . 
+					<span class="item"> 2014 Harberry</span>
+				</div>
+			</div>
+		</div> <!-- footer -->
+		
+		<div id="add-category-modal" class="ui modal mini">
+			<i class="close icon"></i>
+			<div class="header">
+				Add a category
+			</div>			
+			<div class="content">
+				<div class="ui category form fluid segment">			
+					<div class="field">
+						<label> Enter a new category.</label>
+						<div class="ui input">
+							<input placeholder="Category Name" name="category-name" type="text">	
+						</div>
+					</div>
+					<div class="ui small buttons right aligned">
+ 						<div class="ui button cancel">Cancel</div>
+  						<div class="or"></div>
+  						<div class="ui teal submit button">Add</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+		
+		<div id="add-bookmark-modal" class="ui modal small">
+			<i class="close icon"></i>
+			<div class="header">
+				Add a bookmark
+			</div>			
+			<div class="content">
+				<div class="ui bookmark form fluid segment">			
+					<div class="field">
+						<div class="ui input">
+							<input placeholder="URL" name="bookmark-url" type="text">	
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui input">
+							<input placeholder="Bookmark Name" name="bookmark-name" type="text">	
+						</div>
+					</div>
+					<div class="two fields">				
+						<div class="field">
+							<div class="ui selection dropdown">
+								<input type="hidden" name="category-list">
+								<div class="text">Category</div>
+								<i class="dropdown icon" ></i>
+								<div class="menu ui transition hidden">
+									<div class="item" data-value="1">School</div>
+									<div class="item" data-value="2">Music</div>
+									<div class="item" data-value="3">Jobs</div>
+									<div class="item" data-value="4">Social</div>
+									<div class="item" data-value="5">New category</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<input id="category-name" placeholder="Category Name" name="category-name" type="text" hidden="true">
+						</div>
+					</div>
+					<div class="ui small buttons right aligned">
+ 						<div class="ui button cancel">Cancel</div>
+  						<div class="or"></div>
+  						<div class="ui teal submit button">Add</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="semantic/packaged/javascript/semantic.min.js"></script>
+		<script src="js/common.js"></script>  
+		<script src="js/home.js"></script> 
+    </body>
+</html>

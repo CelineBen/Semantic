@@ -1,0 +1,11 @@
+.fixed.right{
+position: absolute;
+right: -20px;
+}
+.item.fixed.bottom{
+position: absolute;
+bottom: 0;
+}
+.right.aligned{
+float: right;
+}

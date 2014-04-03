@@ -1,0 +1,14 @@
+.centered.large{
+margin: 0 auto;
+width: 300px;
+}
+.centered.small{
+margin: 0 auto;
+width: 160px;
+}
+.menu.item{
+font-size: 0.8em;
+}
+#signup{
+background-color: #FFE5CC;
+}
